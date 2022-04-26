@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    /* background-color: #131417; */
+    background-color: #121212;
+    color: white;
+}
+
+header{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 3rem;
+    font-weight: 700;
+    border-bottom: 2px solid gray;
+    margin: 0 0 2rem 0;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+.heading{
+    margin: 2rem 0 0 8rem;
+}
+
+.searchBar__Wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 0 9rem;
+    /* padding: 1rem; */
+}
+
+.searchBar__Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: .5rem 2rem;
+    border: 2px solid gray;
+    border-radius: 99px;
+    width: auto;
+}
+
+.searchVal{
+    padding: 0 1rem;
+    margin-right: 1rem;
+    border: none;
+    font-size: 1.5rem;
+}
+.searchVal:focus{
+    outline-width: 0;
+}
+.fa-video-camera{
+    margin: 0 2rem 0 0;
+}
+.fa-search{
+    font-size: 1.7rem;
+    color: black;
+}
+
+.mainConrainer{
+    width: 100%;
+    /* border: 2px solid red; */
+    margin: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8rem;
+}
+
+.movie{
+    border-bottom: 1px solid rgba(52, 53, 52, 0.651);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 .5rem;
+    gap: 2rem;
+    cursor: pointer;
+}
+.movie:hover{
+    background-color: rgb(26, 26, 26);
+}
+.movie__img{
+    height: 13rem;
+    width: 13rem;
+}
+.info__Container{
+    font-size: 2.6rem;
+    display: flex;
+    flex-direction: column;
+}
+.movie__year{
+    font-size: 2.4rem;
+    text-transform: capitalize;
+}
+.error{
+    font-size: 3rem;
+    /* color: red; */
+}
+.btnContainer{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    /* border: 2px solid black; */
+    justify-content: center;
+}
+button{
+    border: 1px solid rgb(78, 78, 78);
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #12121294;
+    color: white;
+}
+button:disabled{
+    color:rgb(78, 78, 78)
+}
+
+@media all and (max-width: 547px){
+    html{
+        font-size: 55%;
+    }
+    .mainConrainer{
+        padding: 1rem;
+    }
+    .searchVal{
+        font-size: 2rem;
+    }
+    .searchBar__Wrapper{
+        padding: 0 1rem;
+    }
+    .searchBar__Container{
+        width: 100%;
+    }
+    button{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}
